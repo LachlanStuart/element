@@ -9,9 +9,9 @@ var mixinsList = fs.readdirSync(path.resolve(__dirname, '../src/mixins'));
 var transitionList = fs.readdirSync(path.resolve(__dirname, '../src/transitions'));
 var externals = {};
 
-Object.keys(Components).forEach(function(key) {
-  externals[`element-ui/packages/${key}`] = `element-ui/lib/${key}`;
-});
+// Object.keys(Components).forEach(function(key) {
+//   externals[`element-ui/packages/${key}`] = `element-ui/lib/${key}`;
+// });
 
 externals['element-ui/src/locale'] = 'element-ui/lib/locale';
 utilsList.forEach(function(file) {
